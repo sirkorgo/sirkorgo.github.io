@@ -1,0 +1,73 @@
+html {
+    overflow: hidden;
+}
+
+.container {
+    margin: 10%;
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* hide the extending sidebar bottom */
+}
+
+.sidebar {
+    width: 300px;
+    margin: 20px 20px 20px 20px;
+    margin-bottom: -100px; /* extends below viewport */
+    padding: 15px;
+    overflow: visible;
+    position: relative;
+    min-height: calc(100vh + 100px); /* taller than viewport */
+
+    border-radius: 5px;
+    background: linear-gradient(180deg, #F9F9F9 0%, #CEE7FF 100%);
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.sidebarContent {
+    height: 100%;
+    overflow: hidden;
+}
+
+.stickers {
+    display: flex;
+    width: 408px;
+    height: 116px;
+    padding: 101px 250px 111px 250px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1.5;
+  /* your chat content */
+}
+
+.bordered-div {
+    color: black;
+    background: linear-gradient(180deg, #DDF0FF 0%, #B4DEFF 100%);
+    border: 2px solid #7195b0; /* Border width, style, and color */
+    border-radius: 150px; /* Rounded corners */
+    padding: 10px; /* Optional: Adds space inside the border */
+    text-align: center;
+    width: 30%;
+}
+
+.sirkorgo-img {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+.sirkorgo-img img {
+    height: 100%;
+    width: 100%;
+}
