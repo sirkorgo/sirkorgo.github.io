@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 html {
     overflow: hidden;
 }
@@ -60,6 +62,9 @@ marquee {
 }
 
 .bordered-div {
+    font-family: "Patrick Hand";
+    font-weight: 400;
+    font-size: 17px;
     position: inherit;
     color: black;
     background: linear-gradient(180deg, #DDF0FF 0%, #B4DEFF 100%);
