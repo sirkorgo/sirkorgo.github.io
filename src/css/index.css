@@ -81,8 +81,3 @@ marquee {
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
 }
-
-.sirkorgo-img img {
-    height: 145%;
-    width: 145%;
-}
