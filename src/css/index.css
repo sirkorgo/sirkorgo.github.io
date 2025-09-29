@@ -19,7 +19,7 @@ marquee {
 }
 
 .sidebar {
-    width: 300px;
+    width: 400px;
     margin: 20px 20px 20px 20px;
     margin-bottom: -100px; /* extends below viewport */
     padding: 15px;

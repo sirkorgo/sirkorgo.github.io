@@ -37,31 +37,35 @@ html {
 h1 {
   font-family: var(--main-font);
   font-weight: 800;
-  font-size: 15px;
+  font-size: 23px;
   color: black;
 }
 
 h2 {
   font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 20px;
   color: black;
 }
 
 p {
   font-family: var(--main-font);
   font-weight: normal;
-  font-size: 11px;
+  font-size: 15px;
   color: black;
 }
 
 a {
   color: #14BF91;
   font-family: var(--main-font);
-  font-size: 11px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+code {
+  font-size: 15px;
 }
 
 a:hover {
