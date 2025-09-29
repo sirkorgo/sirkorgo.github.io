@@ -34,7 +34,7 @@ marquee {
 
 .sidebarContent {
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .stickers {
