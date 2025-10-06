@@ -2,7 +2,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>sirkorgo.com</title>
-    <link rel="stylesheet" href="/src/css/index.css">
     <link rel="stylesheet" href="/src/css/global.css">
   </head>
   <body>
@@ -11,58 +10,49 @@
             <img class="navHeader" width="100%" height="300%" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDvFTOHpj67eCDdConbIzZdhw64xeoF8ZvCUhENhj9uabgLGqZvEiQ0XW4z0TBIv77br4At538a93T2NKU8zpMBt4Kb2ZYuHU-YvqpiKIqJmEe1-fmser4n5uv5onr6kM0E28PiNjrQ4edilWPr9j_OB3pUuHEeiPMguqLoce3u63CZbo-xAoygPMl36s/s320/logo.png">
           </div>
           <div class="navItems">
-            <button class="about">About</button>
+            <button onclick="loadContent('about')">About</button>
             <br>
-            <button class="inspo">Blog</button>
+            <button onclick="loadContent('blog')">Blog</button>
             <br>
-            <button class="video">Chat</button>
+            <button onclick="loadContent('chat')">Chat</button>
             <br>
-            <button class="games">Guestbook</button>
+            <button onclick="loadContent('guestbook')">Guestbook</button>
             <br>
           </div>
         </nav>
 
-    <div class="container">
-
-        <div class="content">
-            <div class="bordered-div">
-                <b>sirkorgo is feeling:</b> <a href="https://www.imood.com/users/sirkorgo"><br /><img src="https://moods.imood.com/display/uname-sirkorgo/fg-ffffff/bg-27c57d/imood.gif" alt="Neutral"/></a> 
-            </div>
-            <br>
-            <div>
-                <img width="100%" height="100%" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgysdesm6BVFoiFeTzYR5jZbpv7xi6JQdrn2ErtlMUhRhA4R2dPqWXthXFPJyJxvF92ARBGiwEv6EVaFD2axbE2UkUOtwXcYu9YD4hYaHma9xjgxYE7yWpS2sYck8FvGSCQ7Naei9ol_Vr4nz-PB1H4kDeaIO5tP1pTx7BcuUbPU2UoJ-ovrzRlayT4GQ/s320/Untitled_Artwork%2010.png" />
-            </div>
-            <br>
-            <marquee>
-                <img src="/src/img/penguin.gif">
-                <a href="https://mjv2011.nekoweb.org" target="_blank"><img src="https://mjv2011.nekoweb.org/stuffs/Untitled.gif"></a>
-                <a href="https://rice.place"><img src="https://rice.nekoweb.org/button/rice.gif"></a>
-                <a href="https://cyberdemon.nekoweb.org/"><img src="https://cyberdemon.nekoweb.org/button.png" alt="the button of cyberdemon"></a>
-                <a href="https://joo.sh/" target="_blank"><img src="https://files.joo.sh/img/buttons/jooshRice.gif"></a>
-                <img src="/src/img/poyo.gif">
-                <img src="/src/img/dialup.gif">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiGmEC3wuxtdS-2D1gcaUEheasB9M-6em9y1WO0sQ7fYKqs9zKPLxSrvgJ1rcQpPEKaLJf3ooSoaKQlfYvVKomSZo7OZ1Iaol35lmPa5FX0cgcyWvFhKYknMhZI9UenDgt51hCNvF86Ib0e6sOdXSiEh-7ZcxyBVYq4hipVBKngx4ApbykcuXd-oEkXhw/s1600/ralesiweed.gif">
-            </marquee>
-        </div>
-
-        <div class="sidebar">
-            <div class="sidebarContent">
-                <h2>About</h2>
-                <p>Heyo! I'm Sirkorgo. Sirkorgo is my shapeshifting fox OC. I like to use sirkorgo as my online persona, because why not? I'm obsessed with technology from the early 2000's and I find it fun to play and make games. Doodling's fun too, which is how I came up with sirkorgo! Along with a couple of my other OCs like Widget and Mono!</p>
-                <h2>Socials</h2>
-                <a href="https://youtube.com/@sirkorgo"><b>youtube/@sirkorgo</b></a>
-                <br>
-                <a href="https://instagram.com/sirkorgo"><b>instagram/@sirkorgo</b></a>
-                <br>
-                <a href="https://discord.gg/xFPAz8Yvsx"><b>discord/#the-sirkorgo-channel</b></a>
-                <h2>Add my Button!</h2>
-                <a href="https://www.sirkorgo.com" target="_blank"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjr4ph_ex_-pGe8iexceRlxUzvrAIwz4azIB9N0Toh4fQ28_ljh5uwMXFkgxOQPVpMEHKNr86vvj4K67A26tvNV98FMC9Zl27mxoypsvp5mKymM0KD2Fpv0Qa3revdSVVuuJ5AppQIkrMdZUQVTkwzHBROgV3q34GFIdeygXZIcZlfa2R6Mtv4XkmNK7M/s1600/sirkorgo_sticker.gif"/></a>
-                <br/>
-                <code>&lt;a href="https://www.sirkorgo.com" target="_blank"&gt;&lt;img src="https://sirkorgo.neocities.org/image/sirkorgo_sticker.gif"&gt;&lt;/a&gt;</code>
-            </div>
-        </div>
-
+    <div id="container">
 
     </div>
+
+    <script>
+      function loadContent(page) {
+  fetch(`/src/html/${page}.html`)
+    .then(response => {
+      if (!response.ok) throw new Error('Failed to load content');
+      return response.text();
+    })
+    .then(html => {
+      document.getElementById('container').innerHTML = html;
+      document.querySelectorAll('.navbar button').forEach(button => button.classList.remove('active'));
+      const activeButton = document.getElementById(page);
+      if (activeButton) activeButton.classList.add('active');
+      window.location.hash = page;
+
+    })
+    .catch(() => {
+      document.getElementById('content').innerHTML = '<p>Error loading content. Please try again.</p>';
+    });
+}
+      window.addEventListener('load', () => {
+        const page = window.location.hash.slice(1) || 'about';
+        loadContent(page);
+      });
+
+      window.addEventListener('hashchange', () => {
+        const page = window.location.hash.slice(1) || 'about';
+        loadContent(page);
+      });
+    </script>
     </body>
 </html>
