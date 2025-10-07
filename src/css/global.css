@@ -16,6 +16,10 @@ iframe {
   border: transparent;
 }
 
+body {
+  margin-top: 100px;
+}
+
 html {
   background-color: #ffffff;
   background-image: url('/src/img/bg.png');
