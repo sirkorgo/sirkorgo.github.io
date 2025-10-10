@@ -109,7 +109,7 @@ code {
   gap: 8px;
 }
 
-.navHeader {
+.navHeader img {
   display: flex;
   align-items: center;
   max-width: 120px;
