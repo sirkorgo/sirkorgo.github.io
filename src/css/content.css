@@ -16,3 +16,7 @@ body {
 .bkbtn {
     background-color: white;
 }
+
+#guestbook {
+    height: fit-content;
+}
