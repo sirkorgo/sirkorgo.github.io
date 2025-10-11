@@ -1,12 +1,12 @@
 /* ===== FONTS ===== */
 @font-face {
-  font-family: 'NewRodin Pro';
+  font-family: 'Lucida Grande';
   src: url('./font.otf') format('opentype');
   font-display: swap;
 }
 
 :root {
-  --main-font: 'NewRodin Pro', sans-serif;
+  --main-font: 'Lucida Grande', sans-serif;
 }
 
 /* ===== BASE STYLES ===== */

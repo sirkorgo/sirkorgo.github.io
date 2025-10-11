@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: "sirkorgo.com" }}</title>
-  <link rel="stylesheet" href="/src/css/global.css">
-</head>
-<body>
-  {% include navbar.html %}
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: "sirkorgo.com" }}</title>
+    <link rel="stylesheet" href="/src/css/global.css">
+  </head>
+  <body>
+    {% include navbar.html %}
 
-  <main id="content">
-    {{ content }}
-  </main>
-</body>
+    <main id="content">
+      {{ content }}
+    </main>
+  </body>
 </html>
