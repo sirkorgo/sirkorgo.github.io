@@ -13,10 +13,6 @@ body {
     margin-right: 10% !important;
 }
 
-a {
-  text-decoration: none;  
-}
-
 .bkbtn {
     font-family: var(--header);
     font-weight: 500;
