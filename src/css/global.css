@@ -119,7 +119,7 @@ code {
 }
 
 /* ===== BUTTONS ===== */
-button {
+.navBtn {
   border: none;
   background: none;
   font-family: var(--header);
@@ -132,7 +132,7 @@ button {
   min-width: 80px;
 }
 
-button.active {
+.navBtn.active {
   color: white;
   border: 1.5px solid #3EC37D;
   background: linear-gradient(180deg, #ACF4DE 0%, #03C96D 100%);
@@ -141,7 +141,7 @@ button.active {
   min-width: 80px;
 }
 
-button:hover {
+.navBtn:hover {
   border: 1.5px solid #3EC37D;
   background: linear-gradient(180deg, #ACF4DE 0%, #B0F3D4 100%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
