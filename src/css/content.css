@@ -13,6 +13,10 @@ body {
     margin-right: 10% !important;
 }
 
+a {
+  text-decoration: none;  
+}
+
 .bkbtn {
     text-decoration: none;
     border-radius: 10px 10px 0 0;
