@@ -18,7 +18,9 @@ a {
 }
 
 .bkbtn {
-    text-decoration: none;
+    font-family: var(--header);
+    font-weight: 500;
+    font-size: 15px;
     border-radius: 10px 10px 0 0;
     display: flex;
     height: 35px;
