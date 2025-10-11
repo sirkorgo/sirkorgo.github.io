@@ -95,7 +95,8 @@ code {
   
   display: flex;
   width: 75%;
-  padding: 8px 12px;
+  height: 50px;
+  padding: 0px 12px;
   justify-content: space-between;
   align-items: center;
 
@@ -108,9 +109,10 @@ code {
 .navItems {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  gap: 8px;
+  align-items: stretch; /* Change from center */
+  height: 100%; /* Add this */
 }
+
 
 .header, .navHeader {
   display: flex;
@@ -121,29 +123,35 @@ code {
 
 /* ===== BUTTONS ===== */
 .navBtn {
+  height: 100%;
   border: none;
   background: none;
   font-family: var(--header);
   font-weight: 500;
   font-size: 15px;
   color: black;
-  border-radius: 0%;
-  padding: 6px 13px;
+  border-radius: 0;
+  padding: 0 13px; /* Remove vertical padding */
   cursor: pointer;
   min-width: 80px;
+  display: flex; /* Add this */
+  align-items: center; /* Add this */
+  justify-content: center; /* Add this */
 }
 
 .navBtn.active {
   color: white;
-  border: 1.5px solid #3EC37D;
+  border-left: 1.5px solid #3EC37D;
+  border-right: 1.5px solid #3EC37D;
   background: linear-gradient(180deg, #ACF4DE 0%, #03C96D 100%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  padding: 6px 12px;
+  padding: 0 12px; /* Remove vertical padding */
   min-width: 80px;
 }
 
 .navBtn:hover {
-  border: 1.5px solid #3EC37D;
+  border-left: 1.5px solid #3EC37D;
+  border-right: 1.5px solid #3EC37D;
   background: linear-gradient(180deg, #ACF4DE 0%, #B0F3D4 100%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -166,11 +174,7 @@ code {
   .navHeader {
     max-width: 80px;
   }
-  
-  .navItems {
-    gap: 4px;
-  }
-  
+    
   button {
     font-size: 12px;
     padding: 5px 10px;
@@ -190,10 +194,6 @@ code {
   
   .navHeader {
     max-width: 60px;
-  }
-  
-  .navItems {
-    gap: 2px;
   }
   
   button {

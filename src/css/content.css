@@ -9,8 +9,8 @@
 }
 
 body {
-    margin-left: 10% !important;
-    margin-right: 10% !important;
+    margin-left: 15% !important;
+    margin-right: 15% !important;
 }
 
 .bkbtn {
@@ -39,4 +39,32 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
 #guestbook {
     height: fit-content;
+}
+
+.postHeader {
+    padding-left: 20px;
+
+    border-radius: 10px 10px 0 0;
+    border: 1.5px solid #DDD;
+    background: linear-gradient(180deg, #FFF -17.07%, #BABABA 186.03%);
+}
+
+.postHeader:hover {
+    border: 1.5px solid #BBDDF4;
+    background: linear-gradient(180deg, #C0E6FF 0%, #7ABFFF 100%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); 
+}
+
+.postPreview {
+    min-height: 100px;
+    border-radius: 0 0 10px 10px;
+    border: 1.5px solid #DDD;
+    background: linear-gradient(194deg, #FFF -17.07%, #FFFCFC 186.03%);
+}
+
+.post {
+    margin-right: 10%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
 }
