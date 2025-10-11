@@ -1,12 +1,14 @@
 /* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 @font-face {
   font-family: 'Lucida Grande';
-  src: url('./font.otf') format('opentype');
+  src: url('/src/css/font.otf') format('opentype');
   font-display: swap;
 }
 
 :root {
-  --main-font: 'Lucida Grande', sans-serif;
+  --header: 'Lucida Grande', sans-serif;
 }
 
 /* ===== BASE STYLES ===== */
@@ -19,7 +21,7 @@ html {
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: var(--header);
   margin: 0;
   padding-top: 100px;
   min-height: 100vh;
@@ -37,30 +39,30 @@ body {
 
 /* ===== TYPOGRAPHY ===== */
 h1 {
-  font-family: var(--main-font);
+  font-family: var(--header);
   font-weight: 800;
-  font-size: 23px;
+  font-size: 30px;
   color: black;
 }
 
 h2 {
-  font-family: var(--main-font);
+  font-family: var(--header);
   font-weight: 800;
-  font-size: 20px;
+  font-size: 25px;
   color: black;
 }
 
 p {
-  font-family: var(--main-font);
+  font-family: "Patrick Hand";
   font-weight: normal;
-  font-size: 15px;
+  font-size: 20px;
   color: black;
 }
 
 a {
   color: #14BF91;
-  font-family: var(--main-font);
-  font-size: 15px;
+  font-family: "Patrick Hand";
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -92,7 +94,7 @@ code {
   
   display: flex;
   width: 75%;
-  padding: 8px 16px;
+  padding: 8px 12px;
   justify-content: space-between;
   align-items: center;
 
@@ -120,17 +122,18 @@ code {
 button {
   border: none;
   background: none;
-  font-family: var(--main-font);
+  font-family: var(--header);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   color: black;
-  border-radius: 10%;
-  padding: 6px 12px;
+  border-radius: 0%;
+  padding: 6px 13px;
   cursor: pointer;
   min-width: 80px;
 }
 
 button.active {
+  color: white;
   border: 1.5px solid #3EC37D;
   background: linear-gradient(180deg, #ACF4DE 0%, #03C96D 100%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
