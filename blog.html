@@ -16,7 +16,7 @@ title: "sirkorgo.com"
                     {% for post in site.posts %}
                     <div class="post">
                         <a class="" href="{{ post.url }}"><button class="postBtn">{{ post.title }}</button></a></h3>
-                        <div class="postPreview"><p>{{ post.excerpt }}</p></div>
+                        <div class="postPreview"><p>{{ post.excerpt }}</p><p><small><i>Posted on <b>{{ post.date | date_to_string }}</b> by {{ post.author }}</i></small></p></div>
                     </div>
                     <br>
                     {% endfor %}

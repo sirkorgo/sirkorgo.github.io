@@ -12,7 +12,7 @@
     <button class="bkbtn" onclick="location.href = '/blog';">← Go Back</button>
     <main class="content">
         <h1>{{ page.title }}</h1>
-        <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+        <p>Posted on {{ page.date | date_to_string }} by {{ page.author }}</p>
 
         {{ content }}
     </main>
