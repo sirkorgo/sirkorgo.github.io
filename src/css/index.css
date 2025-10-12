@@ -8,6 +8,12 @@
     height: fit-content;
 }
 
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 marquee {
     position: relative;
     top: 0px;
@@ -16,8 +22,10 @@ marquee {
 .sidebar {
     margin-left: 20px;
     width: 350px;
-    padding: 15px;
-    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom:  ;
+    height: fit-content;
     top: 15%;
     border-radius: 5px;
     background: linear-gradient(180deg, #F9F9F9 0%, #CEE7FF 100%);
