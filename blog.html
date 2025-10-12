@@ -15,7 +15,7 @@ title: "sirkorgo.com"
             <h2>Blog</h2>
                     {% for post in site.posts %}
                     <div class="post">
-                        <div class="postHeader"><h3><a class="" href="{{ post.url }}">{{ post.title }}</a></h3></div>
+                        <a class="" href="{{ post.url }}"><button class="postBtn">{{ post.title }}</button></a></h3>
                         <div class="postPreview"><p>{{ post.excerpt }}</p></div>
                     </div>
                     <br>
