@@ -141,19 +141,18 @@ code {
 
 .navBtn.active {
   color: white;
-  border-left: 1.5px solid #3EC37D;
-  border-right: 1.5px solid #3EC37D;
-  background: linear-gradient(180deg, #ACF4DE 0%, #03C96D 100%);
+  border: 1.5px solid #1492E6;
+  background: linear-gradient(180deg, #51B9FF 0%, #007CF0 100%);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   padding: 0 12px; /* Remove vertical padding */
   min-width: 80px;
 }
 
 .navBtn:hover {
-  border-left: 1.5px solid #3EC37D;
-  border-right: 1.5px solid #3EC37D;
-  background: linear-gradient(180deg, #ACF4DE 0%, #B0F3D4 100%);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 1.5px solid #BBDDF4;
+    background: linear-gradient(180deg, #C0E6FF 0%, #7ABFFF 100%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: white;
 }
 
 /* ===== MEDIA QUERIES ===== */
