@@ -234,3 +234,23 @@ code {
 .err404 p {
   font-size: 12px !important;
 }
+
+.ad-left, .ad-right {
+  position: fixed;
+  top: 100px; /* below navbar */
+  width: 15%; /* matches your margin */
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.ad-left {
+  left: 0;
+}
+
+.ad-right {
+  right: 0;
+}
