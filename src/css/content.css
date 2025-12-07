@@ -8,6 +8,11 @@
     box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
+.inner-content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 body {
     margin-left: 15% !important;
     margin-right: 15% !important;

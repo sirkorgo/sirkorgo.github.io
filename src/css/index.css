@@ -26,7 +26,17 @@ marquee {
     padding-right: 15px;
     padding-bottom:  15px;
     height: fit-content;
-    top: 15%;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #F9F9F9 0%, #CEE7FF 100%);
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.char {
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 15px;
+    height: fit-content;
+    overflow-wrap: break-word;
     border-radius: 5px;
     background: linear-gradient(180deg, #F9F9F9 0%, #CEE7FF 100%);
     box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.25);
@@ -60,7 +70,6 @@ marquee {
     justify-content: center;
     align-items: center;
     flex: 1.5;
-  /* your chat content */
 }
 
 .bordered-div {
