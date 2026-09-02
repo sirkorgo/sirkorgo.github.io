@@ -49,9 +49,14 @@ const footerTitle = title;
     />
     <div class="bg-layer"></div>
     <main>
-      <Navbar />
-      <slot />
-      <Footer title={footerTitle} />
+      <section class="the-container-that-centers-the-main-content">
+        <section
+          class="nested-section-that-makes-the-content-not-stretch-the-entire-page-why-is-css-so-annoying">
+          <Navbar />
+          <slot />
+          <Footer title={footerTitle} />
+        </section>
+      </section>
     </main>
   </body><script is:inline src="https://cursor-party.sirkorgo.partykit.dev/cursors.js"></script>
 </html>

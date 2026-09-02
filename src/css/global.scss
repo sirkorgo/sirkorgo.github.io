@@ -49,8 +49,19 @@ body {
 
 main {
   padding-top: 0;
-  margin: 0 20%;
   z-index: 2;
+}
+
+.the-container-that-centers-the-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nested-section-that-makes-the-content-not-stretch-the-entire-page-why-is-css-so-annoying {
+  max-width: 1200px;
 }
 
 .content {
@@ -123,7 +134,7 @@ html.no-transition *::after {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: -2;
+  z-index: -999999;
 
   will-change: transform;
   transform: translate3d(0, 0, 0);
